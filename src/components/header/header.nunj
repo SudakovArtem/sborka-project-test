@@ -1,0 +1,22 @@
+<header class="header">
+	<div class="container">
+		<a class="header__logo">
+			<svg>
+				<use xlink:href="#logo"></use>
+			</svg>
+		</a>
+		{{ menu() }}
+		<div class="user-menu">
+			<a href="" class="user-menu__item">
+				<svg>
+					<use xlink:href="#icon-search"></use>
+				</svg>
+			</a>
+			<a href="" class="user-menu__item">
+				<svg>
+					<use xlink:href="#icon-cart"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</header>

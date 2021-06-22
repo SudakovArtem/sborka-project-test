@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+	flex-shrink: 0;
+  }
+
+  main {
+	flex-grow: 1;
+  }
+}
+
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
