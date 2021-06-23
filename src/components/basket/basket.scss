@@ -6,3 +6,7 @@
 .basket__title {
   margin-bottom: 30px;
 }
+
+.basket__item + .basket__item {
+	margin-top: 40px;
+}

@@ -1,7 +1,7 @@
 const initCounter = () => {
-	const counters = document.querySelectorAll('.js-product');
+	const products = document.querySelectorAll('.js-product');
 
-	if (!counters.length) {
+	if (!products.length) {
 		return;
 	}
 
@@ -11,20 +11,21 @@ const initCounter = () => {
 	const cartCounter = document.querySelector('.user-menu__counter');
 	let sum = 0;
 
-	counters.forEach(counter => {
-		const btnMinus = counter.querySelector('.js-minus');
-		const btnPlus = counter.querySelector('.js-plus');
-		const count = counter.querySelector('span');
-		const price = +counter.querySelector('.js-price').innerText;
-		const deleteBtn = counter.querySelector('.js-delete');
-		let current = +count.innerText;
+	products.forEach(product => {
+		const btnMinus = product.querySelector('.js-minus');
+		const btnPlus = product.querySelector('.js-plus');
+		const counter = product.querySelector('span');
+		const price = +product.querySelector('.js-price').innerText;
+		const deleteBtn = product.querySelector('.js-delete');
+		let currentCount = +counter.innerText;
 		sum += price;
 
 		btnMinus.addEventListener('click', evt => {
 			evt.preventDefault();
-			if (current > 1) {
-				current--;
-				count.innerText = current.toString();
+			evt.stopPropagation();
+			if (currentCount > 1) {
+				currentCount--;
+				counter.innerText = currentCount.toString();
 				sum -= price;
 				subtotal.innerText = sum.toLocaleString();
 				total.innerText = (sum + 250).toLocaleString();
@@ -33,8 +34,9 @@ const initCounter = () => {
 
 		btnPlus.addEventListener('click', evt => {
 			evt.preventDefault();
-			current++;
-			count.innerText = current.toString();
+			evt.stopPropagation();
+			currentCount++;
+			counter.innerText = currentCount.toString();
 			sum += price;
 			subtotal.innerText = sum.toLocaleString();
 			total.innerText = (sum + 250).toLocaleString();
@@ -42,8 +44,9 @@ const initCounter = () => {
 
 		deleteBtn.addEventListener('click', evt => {
 			evt.preventDefault();
-			counter.remove();
-			sum -= price * current;
+			evt.stopPropagation();
+			product.remove();
+			sum -= price * currentCount;
 			subtotal.innerText = sum.toLocaleString();
 			total.innerText = (sum + 250).toLocaleString();
 			const productsLength = document.querySelectorAll('.js-product').length;

@@ -3,9 +3,9 @@
 	<ul class="basket__list">
 		{% for item in basketItems %}
 			<li class="basket__item product-item js-product">
-				<div class="product-item__picture">
+				<a href="#" class="product-item__picture">
 					<img src={% inline item.picture %} alt="product"/>
-				</div>
+				</a>
 				<div class="product-item__content">
 					<p class="product-item__description">{{ item.name }}</p>
 					<div class="product-item__wrap js-quantity">
