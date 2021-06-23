@@ -17,6 +17,7 @@
 
 	<div class="main-wrapper">
 		<main>
+			<h1 class="visually-hidden">SP shop</h1>
 			{% include '../../templates/parts/info/_info.nunj' %}
 		</main>
 		{% include '../../templates/parts/aside/_aside.nunj' %}
