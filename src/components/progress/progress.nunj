@@ -1,0 +1,13 @@
+{% macro progress() %}
+	<div class="progress">
+		{% for item in progressItems %}
+			<div class="progress__step{% if item.status %} {{ item.status }}{% endif %}">
+				<span class="progress__number">{{ item.number }}</span>
+				<span class="progress__text">{{ item.name }}</span>
+			</div>
+			{% if item.last !== true %}
+				<div class="progress__line{% if item.status %} {{ item.status }}{% endif %}"></div>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endmacro %}

@@ -25,14 +25,41 @@
 	  "path": "#"
 	}
   ],
-  "someData": [
+  "progressItems": [
 	{
-	  "title": "Item 1",
-	  "text": "Desc 1"
+	  "name": "Account",
+	  "status": "done",
+	  "number": "1"
 	},
 	{
-	  "title": "Item 2",
-	  "text": "Desc 2"
+	  "name": "Shipping",
+	  "status": "done",
+	  "number":  "2"
+	},
+	{
+	  "name": "Billing",
+	  "status": "current",
+	  "number":  "3"
+	},
+	{
+	  "name": "Review",
+	  "status": null,
+	  "number":  "4",
+	  "last": true
+	}
+  ],
+  "basketItems": [
+	{
+	  "name": "Amet minim mollit non deserunt ullamco est sit",
+	  "price": 525,
+	  "quantity": 1,
+	  "picture": "product-img1.png"
+	},
+	{
+	  "name": "Amet minim mollit non",
+	  "price": 525,
+	  "quantity": 1,
+	  "picture": "product-img2.png"
 	}
   ]
 }

@@ -1,0 +1,13 @@
+.aside {
+  width: 410px;
+  flex-shrink: 0;
+  border-left: 1px solid $color-very-light-grey;
+
+  &.empty {
+	padding: 40px;
+  }
+
+  @media (max-width: 1023px) {
+	display: none;
+  }
+}

@@ -5,6 +5,7 @@ import 'regenerator-runtime/runtime';
 // global.jquery = jquery;
 
 import { gsap } from 'gsap';
+import initCounter from './modules/initCounter';
 
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
 // gsap.registerPlugin(ScrollToPlugin);
@@ -27,6 +28,7 @@ class ProjectApp {
 		this.modules = {};
 		document.addEventListener('DOMContentLoaded', () => {
 			document.documentElement.classList.remove('_loading');
+			initCounter();
 		});
 	}
 }

@@ -1,0 +1,85 @@
+.radio {
+  font-family: $font-family--primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-black;
+
+
+  input:checked + label {
+	color: $color-default-black;
+
+	&:hover,
+	&:focus {
+	  .radio__icon {
+		opacity: 0.8;
+	  }
+	}
+
+	.radio__icon {
+	  border-color: $color-very-light-grey;
+
+	  &::after {
+		background-color: $color-royal-blue;
+	  }
+	}
+  }
+}
+
+.radio__label {
+  cursor: pointer;
+  position: relative;
+  min-height: 18px;
+  padding-left: 27px;
+  font-weight: 400;
+  color: $color-default-black;
+  vertical-align: middle;
+  display: inline-block;
+  outline: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+
+	.radio__icon {
+	  border-color: $color-default-black;
+	}
+  }
+
+  svg {
+	margin-left: 4px;
+  }
+}
+
+.radio__icon {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  background: $color-default-white;
+  border: 1px solid $color-very-light-grey;
+  box-sizing: border-box;
+  cursor: pointer;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  transition: border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+
+  &::after {
+	position: absolute;
+	content: "";
+	background-color: $color-transparent;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: background-color 0.3s ease;
+  }
+}

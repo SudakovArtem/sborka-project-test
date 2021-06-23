@@ -1,4 +1,24 @@
 .header {
-	padding: 20px 0;
-	background: #ccc;
+  padding: 25px 36px 18px 30px;
+  border-bottom: 1px solid $color-very-light-grey;
+
+  @media (max-width: 1023px) {
+	padding: 25px 30px 18px 30px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: $color-default-black;
+  transition: color 0.3s ease;
+
+  &:hover {
+	color: $color-royal-blue;
+  }
 }

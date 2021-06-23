@@ -1,0 +1,27 @@
+.menu {
+  margin-right: 8px;
+  padding-bottom: 6px;
+
+  @media (max-width: 1024px) {
+	display: none;
+  }
+}
+
+.menu__item {
+  font-family: $font-family--primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $color-default-black;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+	opacity: 0.6;
+  }
+
+  + .menu__item {
+	margin-left: 27px;
+  }
+}

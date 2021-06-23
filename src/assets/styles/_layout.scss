@@ -8,13 +8,18 @@
 	flex-shrink: 0;
   }
 
-  main {
+  .main-wrapper {
 	flex-grow: 1;
+	display: flex;
+
+	main {
+	  flex-grow: 1;
+	}
   }
 }
 
 .container {
-  max-width: 1640px;
+  max-width: 100%;
   margin: 0 auto;
-  box-sizing: content-box;
+  //box-sizing: content-box;
 }

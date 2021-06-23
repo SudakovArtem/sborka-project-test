@@ -1,0 +1,18 @@
+<div class="user-menu">
+	<a href="" class="user-menu__item">
+		<svg width="24" height="24">
+			<use xlink:href="#icon-search"></use>
+		</svg>
+	</a>
+	<a href="" class="user-menu__item">
+		<svg width="24" height="21">
+			<use xlink:href="#icon-cart"></use>
+		</svg>
+		<span class="user-menu__counter">2</span>
+	</a>
+	<a href="" class="user-menu__item user-menu__item--burger">
+		<svg width="29" height="22">
+			<use xlink:href="#icon-burger"></use>
+		</svg>
+	</a>
+</div>

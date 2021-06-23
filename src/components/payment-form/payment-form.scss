@@ -1,0 +1,42 @@
+.payment-form__card {
+  max-width: 550px;
+  background: $color-default-white;
+  border: 1px solid $color-transparent;
+  box-sizing: border-box;
+  box-shadow: 0 0 32px rgba($color-default-black, 0.19);
+  border-radius: 5px;
+  padding: 44px 30px 0;
+  margin-bottom: 11px;
+}
+
+.payment-form__card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.payment-form__header {
+  padding: 30px;
+  margin-bottom: 7px;
+}
+
+.payment-form__radio {
+  max-width: 351px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-form__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.payment-form__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}

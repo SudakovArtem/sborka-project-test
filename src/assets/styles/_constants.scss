@@ -1,2 +1,27 @@
+// Typography
+//---------------------------------
+
+$font-family--primary: "Roboto", "Arial", sans-serif;
+
+// Colors
+//---------------------------------
+
+$color-default-black:                        #000000;
+$color-default-white:                        #ffffff;
+$color-transparent:                          rgba(255, 255, 255, 0);
+$color-very-light-grey:                      #cfcfcf;
+$color-royal-blue:                           #3366ff;
+$color-jordy-blue:                           #85a3ff;
+$color-cornflower-blue:                      #5c85ff;
+$color-lavender:                             #ededf1;
+$color-comet:                                #555770;
+$color-manatee:                              #8e90a6;
+$color-light-grey:                           #d5d5d5;
+
+// Animation
+//---------------------------------
+
+$trans--300: 0.3s ease;
+$trans--600: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 $default-transition-duration: 0.4s;
 $default-transition-function: ease-out;

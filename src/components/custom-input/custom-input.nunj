@@ -1,0 +1,6 @@
+{% macro input(props) %}
+	<div class="custom-input{% if props.className %} {{ props.className }}{% endif %} {% if props.mod %} custom-input--{{ props.mod }}{% endif %}">
+		<label for="{{ props.id }}">{{ props.label }}</label>
+		<input type="{{ props.type }}" id="{{ props.id }}" {% if props.placeholder %} placeholder="{{ props.placeholder }}"{% endif %} {% if props.required %}required{% endif %} maxlength="{{ props.maxlength }}">
+	</div>
+{% endmacro %}

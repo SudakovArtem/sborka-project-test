@@ -1,0 +1,36 @@
+<div class="aside__basket basket">
+	<h2 class="h2 basket__title">My basket</h2>
+	<ul class="basket__list">
+		{% for item in basketItems %}
+			<li class="basket__item product-item js-product">
+				<div class="product-item__picture">
+					<img src={% inline item.picture %} alt="product"/>
+				</div>
+				<div class="product-item__content">
+					<p class="product-item__description">{{ item.name }}</p>
+					<div class="product-item__wrap js-quantity">
+						<div class="product-item__quantity">
+							<button class="js-minus" type="button" aria-label="minus">
+								<svg width="21" height="20">
+									<use xlink:href="#icon-minus"></use>
+								</svg>
+							</button>
+							<span>{{ item.quantity }}</span>
+							<button class="js-plus" type="button" aria-label="plus">
+								<svg width="21" height="20">
+									<use xlink:href="#icon-plus"></use>
+								</svg>
+							</button>
+						</div>
+						<span class="product-item__price js-price">{{ item.price }}</span>
+					</div>
+				</div>
+				<button class="product-item__delete js-delete" type="button" aria-label="plus">
+					<svg width="19" height="18" fill="none">
+						<use xlink:href="#icon-close"></use>
+					</svg>
+				</button>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

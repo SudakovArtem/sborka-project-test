@@ -5,11 +5,27 @@
 @import 'reset';
 @import 'global';
 @import 'layout';
+@import "typography";
 // @import 'controls';
+
+// ======= PARTS =======
+@import '../../templates/parts/info/info';
+@import '../../templates/parts/aside/aside';
 
 // ======= COMPONENTS =======
 @import '../../components/header/header';
+@import '../../components/menu/menu';
 @import '../../components/button/button';
+@import '../../components/progress/progress';
+@import '../../components/custom-input/custom-input';
+@import '../../components/radio/radio';
+@import '../../components/checkbox/checkbox';
+@import '../../components/payment-form/payment-form';
+@import '../../components/basket/basket';
+@import '../../components/product-item/product-item';
+@import '../../components/payment-list/payment-list';
+@import '../../components/promo/promo';
+@import '../../components/user-menu/user-menu';
 
 // ======= PAGES =======
 @import 'pages/main';

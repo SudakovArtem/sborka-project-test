@@ -1,0 +1,9 @@
+<div class="aside__promo promo">
+	<h2 class="h2 promo__title">Promo code</h2>
+	<div class="promo__form">
+		<form action="#">
+			{{ input({type: 'text', id: 'promo', placeholder: 'Placeholder Text', required: true}) }}
+			{{ button({children: 'Apply', btnType: 'submit'}) }}
+		</form>
+	</div>
+</div>

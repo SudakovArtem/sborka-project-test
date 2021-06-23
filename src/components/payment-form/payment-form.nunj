@@ -1,0 +1,32 @@
+<div class="info__form payment-form">
+	<form action="#">
+		<div class="payment-form__header">
+			<h2 class="h2 info__title">Billing Information</h2>
+			<div class="payment-form__radio">
+				{{ radio({name: 'pay-type', id: 'credit-card', label: 'Pay with Credit Card', value: 'credit-card', required: false, checked: true}) }}
+				{{ radio({name: 'pay-type', id: 'paypal', label: '<svg width="85" height="23"><use xlink:href="#icon-paypal"></use></svg>', value: 'paypal', required: false, checked: true}) }}
+			</div>
+		</div>
+		<div class="payment-form__card">
+			{{ input({type: 'text', id: 'card-name', placeholder: 'Placeholder Text', label: 'Name on card', required: true}) }}
+			<div class="payment-form__card-grid">
+				{{ input({type: 'number', id: 'card-number1', label: 'Card number', required: true, maxlength: 4}) }}
+				{{ input({type: 'number', id: 'card-number2', required: true, maxlength: 4}) }}
+				{{ input({type: 'number', id: 'card-number3', required: true, maxlength: 4}) }}
+				{{ input({type: 'number', id: 'card-number4', required: true, maxlength: 4}) }}
+			</div>
+			<div class="payment-form__card-grid">
+				{{ input({type: 'number', id: 'card-date', label: 'Expire date', required: true}) }}
+				{{ input({type: 'number', id: 'card-cvv', label: 'CVV code', required: true, maxlength: 3}) }}
+			</div>
+		</div>
+		<div class="payment-form__footer">
+			{{ checkbox({name: 'save', id: 'save', label: 'Save information of this credit card', value: 'save', required: false, checked: true}) }}
+			{{ checkbox({name: 'accept', id: 'accept', label: 'I accept the terms and comditions and the Privacy Policies', value: 'accept', required: true}) }}
+			<div class="payment-form__nav">
+				{{ button({children: 'Back', type: 'link', mod: 'bordered', href: '#'}) }}
+				{{ button({children: 'Check Out', btnType: 'submit'}) }}
+			</div>
+		</div>
+	</form>
+</div>

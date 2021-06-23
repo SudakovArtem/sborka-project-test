@@ -1,0 +1,6 @@
+<section class="info container">
+	<div class="info__content">
+		{{ progress() }}
+		{% include '../../../components/payment-form/payment-form.nunj' %}
+	</div>
+</section>

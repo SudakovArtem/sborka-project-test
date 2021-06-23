@@ -1,0 +1,27 @@
+.promo {
+  padding: 40px;
+  border-bottom: 1px solid $color-very-light-grey;
+}
+
+.promo__title {
+  margin-bottom: 30px;
+}
+
+.promo__form {
+  width: 100%;
+
+  form {
+	width: 100%;
+	display: flex;
+
+	.custom-input {
+	  flex-grow: 1;
+	  margin-bottom: 0;
+	}
+
+	button[type="submit"] {
+	  flex-shrink: 0;
+	  margin-left: 10px;
+	}
+  }
+}

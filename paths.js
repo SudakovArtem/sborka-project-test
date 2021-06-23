@@ -8,6 +8,7 @@ export default {
 		sprites: 'build/assets/images/sprites/',
 		svg: 'build/assets/svg/',
 		videos: 'build/assets/video/',
+		favicon: 'build/',
 	},
 	src: {
 		templates: './src/',

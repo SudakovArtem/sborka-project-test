@@ -1,0 +1,9 @@
+{% macro radio(props) %}
+	<div class="radio{% if props.className %} {{ props.className }}{% endif %} {% if props.mod %} custom-input--{{ props.mod }}{% endif %}">
+		<input name="{{ props.name }}" class="visually-hidden" type="radio" id="{{ props.id }}" value="{{ props.value }}" {% if props.required %}required{% endif %} {% if props.checked %}checked{% endif %}>
+		<label class="radio__label" for="{{ props.id }}">
+			<span class="radio__icon"></span>
+			{{ props.label }}
+		</label>
+	</div>
+{% endmacro %}

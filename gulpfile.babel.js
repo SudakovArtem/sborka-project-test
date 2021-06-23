@@ -10,8 +10,18 @@ import webpack from './gulp-tasks/webpack';
 import zip from './gulp-tasks/zip';
 import watch from './gulp-tasks/watch';
 import server from './gulp-tasks/server';
+import PATHS from "./paths";
 
-gulp.task('build', gulp.parallel(html, styles, fonts, images, svg, webpack));
+const favicon = () => {
+	return gulp.src([
+		'src/favicon/**',
+	], {
+		base: 'src',
+	})
+			.pipe(gulp.dest(PATHS.build.favicon));
+};
+
+gulp.task('build', gulp.parallel(html, styles, fonts, images, svg, favicon, webpack));
 
 gulp.task('production', gulp.series(clean, 'build', assetsVersion));
 
